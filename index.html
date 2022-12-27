@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 1</title>
+    <h1>lesson 1: Переменные. Циклы. Ветвление.</h1>
+    <p>
+      JavaScript - реализация спецификации EcmaScript, высокоуровневый язык
+      программирования, поддерживаемый всеми современными веб-браузерами.
+      Изначально предназначенный для взаимодействия с элементами веб-страниц и
+      добавления интерактивности. ES5 и ES6
+    </p>
+    <div>
+      clg - console.log Примитивы (типы данных)- число, строка, буль,NaN,
+      infinity сложные типы данных - объекты функции массивы
+      <h3>Методы строк:</h3>
+      <ul>
+        <li>интерполяция - ${} - это знак интерполяции</li>
+        <li>Шаблонная строка начинается с ``</li>
+        <li>typeof - узнать тип введеннных данных</li>
+        <li>length - длина строки</li>
+        <li>trim() - убрать лишние пробелы</li>
+        <li>toLowerCase() - нижний регистр</li>
+        <li>
+          includes() - включает в себя, отвечает на вопрос есть ли? возвращает
+          true или false
+        </li>
+        <li>index -</li>
+        <li>indexof - если -1 - то не нашел, если нашел покажет индекс</li>
+      </ul>
+
+      <h3>Методы чисел:</h3>
+      <ul>
+        <li>
+          "папа" всех чисел Number - для преобразования строки в число
+          <br />const valueA = "5"; <br />
+          console.log(Number(valueA)); // 5
+        </li>
+        <li>
+          Number.parseInt() - парсит из строки целое число.
+          <br />console.log(Number.parseInt("5px")); // 5
+          <br />console.log(Number.parseInt("12qwe74")); // 12
+        </li>
+        <li>
+          Метод Number.parseFloat() парсит из строки дробное число. Метод
+          отвечает на вопрос "Это Not A Number?" <br />
+          const validNumber = Number("51"); // 51
+          <br />console.log(Number.isNaN(validNumber)); // false
+        </li>
+      </ul>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </head>
+  <body></body>
+</html>
