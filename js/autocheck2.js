@@ -496,6 +496,17 @@ function getEvenNumbers(start, end) {
     
 
 
+// ================= Задача 32==============
+function includes(array, value) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
 
 
 
