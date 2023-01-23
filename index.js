@@ -1,5 +1,6 @@
 // import "./js/autocheck.js"
-import "./js/autocheck2.js"
+// import "./js/autocheck2.js"
+import "./js/autocheck3.js"
 // import "./js/variables.js"
 // import "./js/primitives.js"
 // import "./js/toString.js"
