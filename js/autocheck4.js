@@ -471,3 +471,216 @@
 
 
 // ====================== Задача 30 ===================
+
+
+
+
+
+// ====================== ЗАДАНИЕ ОТ САНДРЫ ===================
+
+
+// const arr = [
+//   { name: "Albert", surname: "Einstein", born: 1879, dead: 1955, id: 1 },
+//   { name: "Isaac", surname: "Newton", born: 1643, dead: 1727, id: 2 },
+//   { name: "Galileo", surname: "Galilei", born: 1564, dead: 1642, id: 3 },
+//   { name: "Marie", surname: "Curie", born: 1867, dead: 1934, id: 4 },
+//   { name: "Pierre", surname: "Curie", born: 1859, dead: 1906, id: 5 },
+//   { name: "Johannes", surname: "Kepler", born: 1571, dead: 1630, id: 6 },
+//   { name: "Nicolaus", surname: "Copernicus", born: 1473, dead: 1543, id: 7 },
+//   { name: "Max", surname: "Planck", born: 1858, dead: 1947, id: 8 },
+//   { name: "Katherine", surname: "Blodgett", born: 1898, dead: 1979, id: 9 },
+//   { name: "Ada", surname: "Lovelace", born: 1815, dead: 1852, id: 10 },
+//   { name: "Sarah E.", surname: "Goode", born: 1855, dead: 1905, id: 11 },
+//   { name: "Lise", surname: "Meitner", born: 1878, dead: 1968, id: 12 },
+//   { name: "Hanna", surname: "Hammarström", born: 1829, dead: 1909, id: 13 }
+//   ];
+  
+
+//   // const allScientist = []
+//   //   for (const elem of arr) {
+//   //     allScientist.push(elem.name)
+//   //   }
+
+//   //   console.log(allScientist);
+
+
+//   ///////////////////////////// - Получить массив ученых, родившихся в 19 веке.///////////////////////
+//   // Вариант 1
+//     // const allScientistBorn19Centery = []
+//     // for (const elem of arr) {
+//     //   if(elem.born > 1800 && elem.born < 1900) 
+//     //   allScientistBorn19Centery.push(elem)
+//     // }
+
+//     // console.log(allScientistBorn19Centery);
+
+
+// // Вариант 2
+// // const scientists = arr.filter(scientist => scientist.born >= 1800 && scientist.born < 1900);
+// // console.log(scientists);
+  
+// //////////////////////////// - Найти общую сумму лет, сколько прожили все ученые./////////////////////////
+// // Вариант 1
+// // let sumOfYearsLived = 0
+// // for (const elem of arr) {
+// //   sumOfYearsLived += elem.dead - elem.born
+// // }
+// // console.log(sumOfYearsLived);
+// // // Вариант 2
+// // const totalYears = arr.reduce((acc, scientist) => acc + (scientist.dead - scientist.born), 0);
+// // console.log(totalYears);
+
+
+
+// ////////////////////////// - Отсортировать ученых по алфавиту.////////////////////////////////////////////
+
+
+// // const scientistsAZ = arr.sort((a, b) => a.surname.localeCompare(b.surname))
+// // console.log(scientistsAZ);
+
+// // const scientistsAZ2 = arr.sort((a, b) => a.name.localeCompare(b.name));
+// // console.log(scientistsAZ2);
+
+
+
+// /////////////////////// - Отсортировать ученых по количеству прожитых лет.////////////////////////////////////
+
+// // const AZ = arr.sort((a, b) => (a.dead - a.born) - (b.dead - b.born))
+
+// // console.log(AZ);
+
+
+// // const ZA = [arr].sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+// // console.log(ZA);
+
+
+
+
+// ///////////////////Удалить из массива ученых, родившихся в 15, 16 или 17 веках./////////////////////////////
+
+//     // const allScientistBorn18Centery = []
+//     // for (const elem of arr) {
+//     //   if(elem.born > 1700) 
+//     //   allScientistBorn18Centery.push(elem)
+
+//     // }
+
+//     // console.log(allScientistBorn18Centery);
+
+
+//     // const filteredArr = arr.filter(scientist => scientist.born >= 1700);
+//     // console.log(filteredArr);
+
+
+//     // for (const scientist of arr) {
+//     //   if (scientist.born < 1700) {
+//     //     const index = arr.indexOf(scientist);
+//     //     arr.splice(index, 1);
+//     //   }
+//     // }
+
+
+//     ////////////////// - Найти год рождения Albert Einstein./////////////////////////
+
+
+//     // let bDayEinstein = arr.find(option => option.surname === "Einstein").born;
+//     // console.log(bDayEinstein);
+
+
+
+//     // for (const scientist of arr) {
+//     //   if (scientist.name === "Albert" && scientist.surname === "Einstein") {
+//     //     console.log(scientist.born);
+//     //     break;
+//     //   }
+//     // }
+
+
+//     // const einstein = arr.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein");
+//     // console.log(einstein.born);
+
+
+
+
+
+//     //////////////// - Найти ученых, фамилия которых начинается на букву "С"./////////////////////
+// //  const C = [...arr].filter(scientist => scientist.surname[0] === "C");
+// //  console.log(C);
+
+// //  const scientists = arr.filter(scientist => scientist.surname.startsWith("C"));
+
+// //  let scientists2 = [];
+// //  for (const scientist of arr) {
+// //      if (scientist.surname.startsWith("C")) {
+// //          scientists.push(scientist);
+// //      }
+// //  }
+ 
+
+
+// //////////////// - Удалить из массива всех ученых, имя которых начинается на букву "A".////////////////////
+//  const filteredArr = arr.filter(scientist => scientist.name[0] !== "A");
+//  console.log(filteredArr);
+
+//  const scientistsWithoutA = arr.filter(scientist => !scientist.name.startsWith("A"));
+
+
+//     // for (const scientist of arr) {
+//     //   if (scientist.born < 1700) {
+//     //     const index = arr.indexOf(scientist);
+//     //     arr.splice(index, 1);
+//     //   }
+//     // }
+
+
+
+// /////////////////// - Найти ученого, который родился позже всех.////////////////////////
+
+// let max = arr.reduce((acc, curr) => acc.born > curr.born ? acc : curr);
+ 
+// console.log(max);
+
+
+
+
+
+// ///////////////// - Найти ученого, который прожил больше всех и ученого, который меньше.///////////////
+
+
+
+// //сздать новое свойство
+// // const scientists = arr.map(scientist => {
+// //   scientist.lifespan = scientist.dead - scientist.born;
+// //   return scientist;
+// // });
+
+// // const longestLived = scientists.reduce((longest, current) => {
+// //   return (longest.lifespan > current.lifespan) ? longest : current
+// // }, { lifespan: 0 });
+// // console.log(longestLived);
+
+// // const shortestLived = scientists.reduce((shortest, current) => {
+// //   return (shortest.lifespan < current.lifespan) ? shortest : current
+// // }, { lifespan: Number.MAX_SAFE_INTEGER });
+// // console.log(shortestLived);
+
+
+
+// let oldest = arr.reduce((a, b) => (a.dead - a.born > b.dead - b.born) ? a : b);
+// let youngest = arr.reduce((a, b) => (a.dead - a.born < b.dead - b.born) ? a : b);
+
+// console.log("oldest", oldest);
+// console.log("youngest", youngest);
+
+// // - Найти ученых, у которых совпадают первые буквы имени и фамилии.
+
+// const connect = arr.filter(scientist => scientist.name[0] === scientist.surname[0])
+// console.log(connect);
+
+
+
+// // - Узнать, все ли ученые работали в 19 веке.
+
+
+// let allWorkedIn19thCentury = arr.every(scientist => scientist.born >= 1800 && scientist.born < 1900);
+// console.log(allWorkedIn19thCentury);
